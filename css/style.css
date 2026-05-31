@@ -123,7 +123,7 @@ body {
 }
 
 .video-container {
-    display: none;
+    background: url('../15.PNG') center center / cover no-repeat;
 }
 
 #hero-video {
