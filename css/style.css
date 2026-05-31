@@ -111,7 +111,7 @@ body {
     justify-content: center;
     text-align: center;
     overflow: hidden;
-    background: url('../bg/a3e13a757bf2fdaa669f0fd7251ffa04.jpg') center center / cover no-repeat;
+    background: url('../bg/6.jpg') center center / cover no-repeat;
 }
 
 .hero::before {
@@ -195,8 +195,18 @@ body {
 
 /* Logo & Naming Section */
 .logo-section {
-    background: linear-gradient(rgba(15,23,42,0.75), rgba(15,23,42,0.75)),
-                url('../bg/1.jpg') center center / cover no-repeat;
+    background: url('../bg/1.jpg') center center / cover no-repeat;
+}
+.logo-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.75);
+    z-index: 0;
+}
+.logo-section .container {
+    position: relative;
+    z-index: 1;
 }
 
 .logo-grid-block {
@@ -322,8 +332,18 @@ body {
 
 /* Business Model Section */
 .business-model-section {
-    background: linear-gradient(rgba(15,23,42,0.75), rgba(15,23,42,0.75)),
-                url('../bg/2.jpg') center center / cover no-repeat;
+    background: url('../bg/2.jpg') center center / cover no-repeat;
+}
+.business-model-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(248, 250, 252, 0.82);
+    z-index: 0;
+}
+.business-model-section .container {
+    position: relative;
+    z-index: 1;
 }
 
 .model-container {
@@ -476,8 +496,18 @@ body {
 
 /* Brand Film Section */
 .brand-film-section {
-    background: linear-gradient(rgba(15,23,42,0.75), rgba(15,23,42,0.75)),
-                url('../bg/3.jpg') center center / cover no-repeat;
+    background: url('../bg/3.jpg') center center / cover no-repeat;
+}
+.brand-film-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.7);
+    z-index: 0;
+}
+.brand-film-section .container {
+    position: relative;
+    z-index: 1;
 }
 
 .film-wrapper {
@@ -498,8 +528,18 @@ body {
 
 /* Implementation Section */
 .implementation-section {
-    background: linear-gradient(rgba(15,23,42,0.75), rgba(15,23,42,0.75)),
-                url('../bg/4.jpg') center center / cover no-repeat;
+    background: url('../bg/4.jpg') center center / cover no-repeat;
+}
+.implementation-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(241, 245, 249, 0.85);
+    z-index: 0;
+}
+.implementation-section .container {
+    position: relative;
+    z-index: 1;
 }
 
 .plan-title {
@@ -595,11 +635,25 @@ body {
 
 /* Footer */
 .footer {
+    background: url('../bg/5.jpg') center center / cover no-repeat;
+    position: relative;
     padding: 40px 0;
-    background: var(--dark);
     text-align: center;
-    color: var(--text-gray);
     border-top: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.75);
+    z-index: 0;
+}
+
+.footer .container {
+    position: relative;
+    z-index: 1;
+    color: var(--text-gray);
 }
 
 /* Animations */
